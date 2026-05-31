@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Special Someone ❤️</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="cursor-follower"></div>
+    <div id="app">
+        <!-- Background Elements -->
+        <div class="top-panel">
+            <div class="page-indicator" id="page-indicator">
+                <span class="indicator-label" id="indicator-label">CHAPTER</span>
+                <strong id="indicator-count">01 / 04</strong>
+            </div>
+        </div>
+        <div class="stars-container"></div>
+        <div class="aurora-layer" aria-hidden="true"></div>
+        <div class="petals-container"></div>
+        <div class="hearts-container" aria-hidden="true"></div>
+        
+        <!-- Music Toggle -->
+        <button id="music-toggle" class="music-btn" aria-label="Play background music" aria-pressed="false">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-music"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+        </button>
+
+        <!-- Main Content -->
+        <main id="main-content">
+            <!-- Splash Screen -->
+            <section id="splash" class="page active">
+                <div class="splash-content">
+                    <div class="hand-container">
+                        <img src="my_rose-removebg-preview.png" alt="Rose Offering" id="rose-hand" class="floating-hand">
+                    </div>
+                    <div class="typewriter-container">
+                        <p id="splash-text-1" class="typewriter"></p>
+                        <p id="splash-text-2" class="typewriter"></p>
+                    </div>
+                    <button id="take-rose-btn" class="primary-btn glow-btn hidden">Take the Rose 🌹</button>
+                </div>
+            </section>
+
+            <!-- Page 1: Emotional anticipation -->
+            <section id="journey-1" class="page">
+                <div class="content-wrapper">
+                    <div id="messages-1" class="messages-container"></div>
+                    <div class="cards-grid hidden" id="journey-1-cards">
+                        <div class="glass-card" data-reason="smile" role="button" tabindex="0" aria-pressed="false">
+                            <div class="card-inner">
+                                <div class="card-front">Your Smile</div>
+                                <div class="card-back">It lights up my world.</div>
+                            </div>
+                        </div>
+                        <div class="glass-card" data-reason="kindness" role="button" tabindex="0" aria-pressed="false">
+                            <div class="card-inner">
+                                <div class="card-front">Your Kindness</div>
+                                <div class="card-back">It touches every soul.</div>
+                            </div>
+                        </div>
+                        <div class="glass-card" data-reason="personality" role="button" tabindex="0" aria-pressed="false">
+                            <div class="card-inner">
+                                <div class="card-front">Your Spirit</div>
+                                <div class="card-back">You are truly one of a kind.</div>
+                            </div>
+                        </div>
+                        <div class="glass-card" data-reason="magic" role="button" tabindex="0" aria-pressed="false">
+                            <div class="card-inner">
+                                <div class="card-front">Your Presence</div>
+                                <div class="card-back">Everything is better with you.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="continue-1" class="primary-btn hidden">Continue ❤️</button>
+                </div>
+            </section>
+
+            <!-- Page 2: Why You Are Special -->
+            <section id="journey-2" class="page">
+                <div class="content-wrapper">
+                    <div class="special-cards-container">
+                        <button class="special-card" type="button" aria-pressed="false">
+                            <span>Your smile can brighten even the darkest day.</span>
+                        </button>
+                        <button class="special-card" type="button" aria-pressed="false">
+                            <span>Your kindness is something truly rare.</span>
+                        </button>
+                        <button class="special-card" type="button" aria-pressed="false">
+                            <span>Your personality is what makes you unforgettable.</span>
+                        </button>
+                        <button class="special-card" type="button" aria-pressed="false">
+                            <span>You make ordinary moments feel special.</span>
+                        </button>
+                    </div>
+                    <div class="special-progress" aria-label="Special cards completed">
+                        <span class="progress-dot"></span>
+                        <span class="progress-dot"></span>
+                        <span class="progress-dot"></span>
+                        <span class="progress-dot"></span>
+                    </div>
+                    <div id="favorite-person-msg" class="glowing-text hidden">
+                        <p>Without even realizing it...</p>
+                        <p>You became one of my favorite people.</p>
+                    </div>
+                    <button id="continue-2" class="primary-btn hidden">One Last Thing...</button>
+                </div>
+            </section>
+
+            <!-- Page 3: The Proposal -->
+            <section id="proposal" class="page">
+                <div class="proposal-wrapper">
+                    <div class="heart-formation-container">
+                        <canvas id="heart-canvas"></canvas>
+                    </div>
+                    <div class="proposal-text">
+                        <p id="prop-text-1" class="fade-in">I’ve thought about this for a long time.</p>
+                        <p id="prop-text-2" class="fade-in">And today...</p>
+                        <p id="prop-text-3" class="fade-in">I finally want to ask you something.</p>
+                        <h1 id="proposal-title" class="glitter-text">WILL YOU BE MINE?</h1>
+                    </div>
+                    <div class="proposal-buttons">
+                        <button id="yes-btn" class="proposal-btn yes-btn">❤️ YES</button>
+                        <button id="no-btn" class="proposal-btn no-btn">😅 NO</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Page 4: Celebration -->
+            <section id="celebration" class="page">
+                <div class="celebration-content">
+                    <h1 class="main-title">YOU JUST MADE ME THE HAPPIEST PERSON ALIVE ❤️</h1>
+                    <p class="sub-message">This day will always be special to me.</p>
+                    
+                    <div class="names-reveal">
+                        <span class="heart-glow">Anamika</span>
+                        <div class="heart-icon-animated">❤️</div>
+                        <span class="heart-glow">Amarjith</span>
+                    </div>
+
+                    <div class="date-container">
+                        <p id="current-date"></p>
+                    </div>
+
+                    <p class="forever-text">"Every great story begins with a single yes."</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
